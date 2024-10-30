@@ -4,8 +4,355 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <title>Dashboard</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="h-screen w-screen bg-gray">
+    <div class="flex p-2">
+      <div
+        class="w-1/5 flex flex-col px-8 py-8 gap-8 bg-maindark text-sidetext text-xl rounded-tl-3xl rounded-bl-3xl"
+      >
+        <div class="text-white text-2xl flex items-center gap-2">
+          <ion-icon class="" name="logo-tableau"></ion-icon>
+          <p>Siohioma</p>
+        </div>
+        <div class="">
+          <h2 class="mb-4 text-white text-base">Menu</h2>
+          <ul class="text-base">
+            <li class="mb-6 flex items-center gap-4">
+              <ion-icon class="size-6" name="grid-outline"></ion-icon>
+              <a class="hover:text-white" href="#">Overview</a>
+            </li>
+            <li class="mb-6 flex items-center gap-4">
+              <ion-icon class="size-6" name="stats-chart-outline"></ion-icon>
+              <a class="hover:text-white" href="#">Statistics</a>
+            </li>
+            <li class="mb-6 flex items-center gap-4">
+              <ion-icon class="size-6" name="happy-outline"></ion-icon>
+              <a class="hover:text-white" href="#">Customers</a>
+            </li>
+            <li class="mb-6 flex items-center gap-4">
+              <ion-icon class="size-6" name="code-outline"></ion-icon>
+              <a class="hover:text-white" href="#">Product</a>
+            </li>
+            <li class="mb-6 flex items-center gap-4">
+              <ion-icon class="size-6" name="mail-outline"></ion-icon>
+              <a class="hover:text-white" href="#">Messages</a>
+            </li>
+            <li class="mb-6 flex items-center gap-4">
+              <ion-icon class="size-6" name="card-outline"></ion-icon>
+              <a class="hover:text-white" href="#">Transactions</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-4 text-white text-base">General</h2>
+          <ul class="text-base">
+            <li class="mb-6 flex items-center gap-4">
+              <ion-icon class="size-6" name="settings-outline"></ion-icon>
+              <a class="hover:text-white" href="#">Setings</a>
+            </li>
+            <li class="mb-6 flex items-center gap-4">
+              <ion-icon class="size-6" name="shield-outline"></ion-icon>
+              <a class="hover:text-white" href="#">Security</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto flex items-center gap-4">
+          <div>
+            <img
+              class="rounded-full w-12"
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="text-white text-sm">Fandaww Punx</p>
+            <p class="text-sm">fandawwpunx@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-4/5 rounded-tr-3xl bg-white rounded-br-3xl">
+        <div class="h-24 border-b flex items-center justify-between px-4">
+          <div>
+            <h1 class="text-2xl font-semibold">Sales Admin</h1>
+          </div>
+          <div
+            class="flex items-center justify-center px-3 py-1 rounded-full border"
+          >
+            <input
+              class="outline-none border-none w-64"
+              type="text"
+              placeholder="Search anything in Siohioma..."
+            />
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="flex items-start gap-5">
+            <div>
+              <ion-icon
+                class="border rounded-full p-2"
+                name="mail-unread-outline"
+              ></ion-icon>
+            </div>
+            <div>
+              <ion-icon
+                class="border rounded-full p-2"
+                name="git-compare-outline"
+              ></ion-icon>
+            </div>
+            <div class="flex items-center border rounded-full gap-2 py-1 px-3">
+              <p class="">Add new product</p>
+              <ion-icon class="" name="add-circle-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="w-4/6 border-r p-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h1 class="text-2xl font-semibold">Dashboard</h1>
+                <p>An any way yo manage sales with care and precision</p>
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 border rounded-full px-2 py-1"
+              >
+                <ion-icon name="calendar-number-outline"></ion-icon>
+                <p>Junuary 2024 - May 2024</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mt-8 text-sm">
+              <div
+                class="flex flex-col items-start justify-between text-white border p-6 rounded-2xl bg-maindark"
+              >
+                <div class="flex items-center gap-2">
+                  <ion-icon name="alert-circle-outline"></ion-icon>
+                  <h1>Uptade</h1>
+                </div>
+                <div class="mt-6">
+                  <p class="opacity-50">Feb 12th 2024</p>
+                  <h1>
+                    Sales revenue increased
+                    <span class="text-lightgreen">%40</span> in 1 week
+                  </h1>
+                </div>
+                <div class="flex items-center gap-2 mt-6">
+                  <p>See statistics</p>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-start justify-between border p-6 rounded-2xl"
+              >
+                <div class="flex items-center justify-between w-full">
+                  <p>Net Income</p>
+                  <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                </div>
+                <div class="flex justify-center w-full">
+                  <span class="font-semibold">$</span>
+                  <p class="text-5xl font-semibold">193.000</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <ion-icon
+                    class="text-lightgreen"
+                    name="trending-up-outline"
+                  ></ion-icon>
+                  <p>
+                    <span class="text-lightgreen">+35%</span> from last month
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-start justify-between border p-6 rounded-2xl"
+              >
+                <div class="flex items-center justify-between w-full">
+                  <p>Total Return</p>
+                  <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                </div>
+                <div class="flex justify-center w-full">
+                  <span class="font-semibold">$</span>
+                  <p class="text-5xl font-semibold">32.000</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <ion-icon
+                    class="text-red"
+                    name="trending-down-outline"
+                  ></ion-icon>
+                  <p><span class="text-red">-24%</span> from last month</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8 text-sm">
+              <div class="border rounded-2xl p-6">
+                <div class="flex items-center justify-between">
+                  <h1 class="text-base font-bold">Transaction</h1>
+                  <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                </div>
+                <div class="mt-6">
+                  <div class="grid grid-cols-2 justify-between">
+                    <div class="flex gap-4 items-center">
+                      <div>
+                        <ion-icon
+                          class="bg-gray rounded-full p-2"
+                          name="ellipsis-horizontal-outline"
+                        ></ion-icon>
+                      </div>
+                      <div>
+                        <p class="font-semibold">Premium T-shirt</p>
+                        <p class="opacity-50">Jul 12th 2024</p>
+                      </div>
+                    </div>
+                    <div class="justify-self-end text-right">
+                      <p class="text-lightgreen">Completed</p>
+                      <p class="opacity-50">0JWEJS7ISNC</p>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 justify-between mt-4">
+                    <div class="flex gap-4 items-center">
+                      <div>
+                        <ion-icon
+                          class="bg-gray rounded-full p-2"
+                          name="ellipsis-horizontal-outline"
+                        ></ion-icon>
+                      </div>
+                      <div>
+                        <p class="font-semibold">Premium T-shirt</p>
+                        <p class="opacity-50">Jul 12th 2024</p>
+                      </div>
+                    </div>
+                    <div class="justify-self-end text-right">
+                      <p class="text-lightgreen">Completed</p>
+                      <p class="opacity-50">0JWEJS7ISNC</p>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 justify-between mt-4">
+                    <div class="flex gap-4 items-center">
+                      <div>
+                        <ion-icon
+                          class="bg-gray rounded-full p-2"
+                          name="ellipsis-horizontal-outline"
+                        ></ion-icon>
+                      </div>
+                      <div>
+                        <p class="font-semibold">Premium T-shirt</p>
+                        <p class="opacity-50">Jul 12th 2024</p>
+                      </div>
+                    </div>
+                    <div class="justify-self-end text-right">
+                      <p class="text-lightgreen">Completed</p>
+                      <p class="opacity-50">0JWEJS7ISNC</p>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 justify-between mt-4">
+                    <div class="flex gap-4 items-center">
+                      <div>
+                        <ion-icon
+                          class="bg-gray rounded-full p-2"
+                          name="ellipsis-horizontal-outline"
+                        ></ion-icon>
+                      </div>
+                      <div>
+                        <p class="font-semibold">Premium T-shirt</p>
+                        <p class="opacity-50">Jul 12th 2024</p>
+                      </div>
+                    </div>
+                    <div class="justify-self-end text-right">
+                      <p class="text-lightgreen">Completed</p>
+                      <p class="opacity-50">0JWEJS7ISNC</p>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 justify-between mt-4">
+                    <div class="flex gap-4 items-center">
+                      <div>
+                        <ion-icon
+                          class="bg-gray rounded-full p-2"
+                          name="ellipsis-horizontal-outline"
+                        ></ion-icon>
+                      </div>
+                      <div>
+                        <p class="font-semibold">Premium T-shirt</p>
+                        <p class="opacity-50">Jul 12th 2024</p>
+                      </div>
+                    </div>
+                    <div class="justify-self-end text-right">
+                      <p class="text-lightgreen">Completed</p>
+                      <p class="opacity-50">0JWEJS7ISNC</p>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 justify-between mt-4">
+                    <div class="flex gap-4 items-center">
+                      <div>
+                        <ion-icon
+                          class="bg-gray rounded-full p-2"
+                          name="ellipsis-horizontal-outline"
+                        ></ion-icon>
+                      </div>
+                      <div>
+                        <p class="font-semibold">Premium T-shirt</p>
+                        <p class="opacity-50">Jul 12th 2024</p>
+                      </div>
+                    </div>
+                    <div class="justify-self-end text-right">
+                      <p class="text-lightgreen">Completed</p>
+                      <p class="opacity-50">0JWEJS7ISNC</p>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 justify-between mt-4">
+                    <div class="flex gap-4 items-center">
+                      <div>
+                        <ion-icon
+                          class="bg-gray rounded-full p-2"
+                          name="ellipsis-horizontal-outline"
+                        ></ion-icon>
+                      </div>
+                      <div>
+                        <p class="font-semibold">Premium T-shirt</p>
+                        <p class="opacity-50">Jul 12th 2024</p>
+                      </div>
+                    </div>
+                    <div class="justify-self-end text-right">
+                      <p class="text-lightgreen">Completed</p>
+                      <p class="opacity-50">0JWEJS7ISNC</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="p-6 border rounded-2xl">
+                  <div class="flex items-center justify-between border-b pb-4">
+                    <div>
+                      <p class="text-base font-bold">Revenue</p>
+                    </div>
+                    <div class="flex">
+                      <div class="flex items-center gap-2 mr-4">
+                        <span
+                          class="w-4 h-4 rounded-sm block bg-lightgreen"
+                        ></span>
+                        <p>Income</p>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="w-4 h-4 rounded-sm block bg-red"></span>
+                        <p>Expenses</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </div>
+                <div class="border rounded-full">grid</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-2/6">sağ</div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
